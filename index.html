@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Throwing Dices</title>
+</head>
+<body>
+    <h1 id="result">player 1 wins</h1>
+    <section>
+        <div class="player-column">
+            <h2 id="player-name1" class="player-name">player 1</h2>
+            <div class="dice dice1">
+                <div class="dot"></div>
+                <div style="opacity: 0;" class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div style="opacity: 0;" class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div style="opacity: 0;" class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+        <div class="player-column">
+            <h2 id="player-name2" class="player-name">player 2</h2>
+            <div class="dice dice2">
+                <div class="dot"></div>
+                <div style="opacity: 0;" class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div style="opacity: 0;" class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div style="opacity: 0;" class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </section>
+    <div>
+        <button class="roll-btn btn">Roll Dice</button>
+        <button class="menu-btn btn">Menu</button>
+    </div>
+    <div class="menu-container">
+        <div class="menu">
+            <div>
+                <label for="player1">player1</label>
+                <input type="text" id="player1">
+            </div>
+            <div>
+                <label for="player2">player2</label>
+                <input type="text" id="player2">
+            </div>
+            <button class="btn submit-btn">Submit</button>
+            <button class="btn cancel-btn">cancel</button>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

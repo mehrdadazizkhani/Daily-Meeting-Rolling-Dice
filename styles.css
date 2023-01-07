@@ -1,0 +1,107 @@
+:root {
+    /* color palette */
+    --color-primary: #333;
+    --color-secondary: #999;
+
+    --grid-gap: 4rem;
+}
+
+html {
+    /* 62.5% of 16px = 10px*/
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    user-select: none;
+}
+
+#result {
+    font-size: 5rem;
+}
+
+section {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.dice {
+    width: 30rem;
+    aspect-ratio: 1/1;
+    border-radius: 3rem;
+    background-color: var(--color-secondary);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: var(--grid-gap);
+    padding: calc(var(--grid-gap) / 1.2);
+}
+
+.dot {
+    background-color: var(--color-primary);
+    border-radius: 50%;  
+}
+
+.menu-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.menu {
+    background-color: var(--color-primary);
+    width: 50%;
+    padding: 8rem 2rem;
+    border-radius: 1rem;
+    color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    border: 0.3rem solid var(--color-secondary);
+}
+
+.btn {
+    width: 15rem;
+    border: 0.2rem solid var(--color-secondary) ;
+    background-color: var(--color-secondary);
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+    padding: 0.3rem 0;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--color-secondary);
+}
+
+
